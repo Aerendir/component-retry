@@ -31,7 +31,7 @@ final class ExponentialStrategy extends AbstractStrategy
         parent::__construct($maxAttempts, $incrementBy, $timeUnit);
     }
 
-    public function retryOn()
+    public function retryOn(): \DateTime|false
     {
         // If we can retry...
         if (parent::canRetry()) {

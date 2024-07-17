@@ -21,7 +21,7 @@ class ConstantStrategy extends AbstractStrategy
     /** @var string */
     public const STRATEGY = 'constant';
 
-    public function retryOn()
+    public function retryOn(): \DateTime|false
     {
         // If we can retry...
         if (parent::canRetry()) {
