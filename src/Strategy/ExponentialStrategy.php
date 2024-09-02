@@ -24,7 +24,7 @@ final class ExponentialStrategy extends AbstractStrategy
         int $maxAttempts,
         int $incrementBy,
         string $timeUnit = StrategyInterface::TIME_UNIT_SECONDS,
-        int $exponentialBase = 2
+        int $exponentialBase = 2,
     ) {
         $this->setExponentialBase($exponentialBase);
 
