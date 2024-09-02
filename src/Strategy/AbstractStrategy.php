@@ -28,7 +28,7 @@ abstract class AbstractStrategy implements StrategyInterface
     private string $timeUnit;
 
     public function __construct(
-        int $maxAttempts, int $incrementBy, string $timeUnit = StrategyInterface::TIME_UNIT_SECONDS
+        int $maxAttempts, int $incrementBy, string $timeUnit = StrategyInterface::TIME_UNIT_SECONDS,
     ) {
         $this->setMaxAttempts($maxAttempts)->setIncrementBy($incrementBy)->setTimeUnit($timeUnit);
     }
